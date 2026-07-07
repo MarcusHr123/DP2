@@ -1,0 +1,114 @@
+/*Gör så att html och body fyller hela webbläsarfönstret*/
+html,
+body {
+    height: 100%;
+    margin: 0; /*Tar bort standardmarginalen*/
+}
+
+/*Inställningar för hela sidan*/
+body {
+    display: flex; /*Använder Flexbox*/
+    align-items: center; /*Centrerar innehållet vertikalt*/
+    justify-content: center; /*Centrerar innehållet horisontellt*/
+
+    /*Bakgrundsbild*/
+    background-image: url("background.jpg");
+    background-size: cover; /*Täcker hela sidan*/
+    background-position: center; /*Centrerar bilden*/
+    background-repeat: no-repeat; /*Förhindrar upprepning*/
+
+    /*Skugga på texten*/
+    text-shadow: 0 .05rem .2rem rgba(0,0,0,.7);
+
+    /*Mörk skugga över bakgrunden*/
+    box-shadow: inset 0 0 8rem rgba(0,0,0,.6);
+}
+
+/*Begränsar bredden på innehållet*/
+.cover-container {
+    max-width: 42em;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem; /*Avstånd till innehållet under*/
+}
+
+/*Meny*/
+.nav-masthead {
+    gap: 2rem; /*Avstånd mellan menyalternativen*/
+}
+
+/*Utseende på menylänkarna*/
+.nav-masthead .nav-link {
+    color: rgba(255,255,255,.75);
+    border-bottom: .2rem solid transparent;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/*Ändrar utseende när muspekaren är över länken*/
+.nav-masthead .nav-link:hover {
+    color: white;
+    border-bottom-color: white;
+}
+
+/*Markerar den aktiva sidan*/
+.nav-masthead .active {
+    color: white;
+    border-bottom-color: white;
+}
+
+/*Knapp*/
+.btn-light {
+    color: #333;
+    font-weight: bold;
+}
+
+/*Huvudrubrik*/
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/*Brödtext*/
+.lead {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+/*Faktalista*/
+.fact-list {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*Avstånd mellan punkterna i listan*/
+.fact-list li {
+    margin-bottom: 8px;
+}
+
+/*Länkar*/
+a {
+    color: white;
+}
+
+/*Länk när muspekaren är över*/
+a:hover {
+    color: grey;
+}
+
+/*Formulär*/
+form {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+/*Avstånd mellan formulärfälten*/
+.form-control {
+    margin-bottom: 15px;
+}
